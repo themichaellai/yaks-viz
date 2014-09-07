@@ -35,7 +35,7 @@
       console.log(data.length);
       data.forEach(function(yak) {
         var infoWindow = new google.maps.InfoWindow({
-          content: yak.message
+          content: yak.message + '<br />' + yak.time
         });
         var marker = new google.maps.Marker({
           position: totallyLegitLocationEnhancer(yak.latitude, yak.longitude),
